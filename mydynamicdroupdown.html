@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+</body>
+
+</html>
+<script>
+    // frist box create
+    a = 0;
+    box = document.createElement("div");
+    box.setAttribute("id", "box");
+    body.appendChild(box);
+
+    box.style.height = "50px";
+    box.style.width = "300px";
+    box.style.backgroundColor = "red";
+    button = document.createElement("button");
+    box.appendChild(button);
+    button.style.backgroundColor = "white";
+    button.setAttribute("class", "fa-solid fa-arrow-down");
+
+
+    box2 = document.createElement("div");
+    box2.setAttribute("id", "box2");
+    body.appendChild(box2);
+    
+    box2.style.height = "0px";
+    box2.style.width = "300px";
+    
+    box2.style.backgroundColor = "yellow";
+    button.setAttribute("id", "arrow");
+    
+    
+    
+    
+    
+    // second box create
+    b = 0;
+    box3 = document.createElement("div");
+    box3.setAttribute("id", "box3");
+    body.appendChild(box3);
+
+    box3.style.height = "50px";
+    box3.style.width = "300px";
+    box3.style.backgroundColor = "blue";
+    button1 = document.createElement("button");
+    box3.appendChild(button1);
+    button1.style.backgroundColor = "white";
+    button1.setAttribute("class", "fa-solid fa-arrow-down");
+
+
+
+    box4 = document.createElement("div");
+    box4.setAttribute("id", "box4");
+    body.appendChild(box4);
+
+    box4.style.height = "0px";
+    box4.style.width = "300px";
+
+    box4.style.backgroundColor = "green";
+    button1.setAttribute("id", "arrow1");
+
+
+
+
+// box three create
+    c = 0;
+    box5 = document.createElement("div");
+    box5.setAttribute("id", "box5");
+    body.appendChild(box5);
+
+    box5.style.height = "50px";
+    box5.style.width = "300px";
+    box5.style.backgroundColor = "gray";
+    button2 = document.createElement("button");
+    box5.appendChild(button2);
+    button2.style.backgroundColor = "white";
+    button2.setAttribute("class", "fa-solid fa-arrow-down");
+
+
+
+    box6 = document.createElement("div");
+    box6.setAttribute("id", "box6");
+    body.appendChild(box6);
+
+    box6.style.height = "0px";
+    box6.style.width = "300px";
+
+    box6.style.backgroundColor = "pink";
+    button2.setAttribute("id", "arrow2");
+
+
+// first event
+    arrow.onclick = () => {
+        if (a == 0) {
+            box2.style.height = "400px";
+            box2.style.transition = "3s";
+            box4.style.height ="0px";
+            box6.style.height ="0px";
+            a = 1;
+            b = 0;
+            c = 0;
+
+        }
+        else {
+            box2.style.height = "0px";
+            box2.style.transition = "3s";
+            a = 0;
+        }
+    }
+
+
+    // second event 
+    arrow1.onclick = () => {
+        if (b == 0) {
+            box4.style.height = "400px";
+            box4.style.transition = "3s";
+            box2.style.height ="0px";
+            box6.style.height ="0px";
+            b = 1;
+            a = 0;
+            c = 0;
+        }
+        else {
+            box4.style.height = "0px";
+            box4.style.transition = "3s";
+            b = 0;
+        }
+    }
+
+    // third event 
+
+    arrow2.onclick = () => {
+
+        if (c == 0) {
+            box6.style.height = "400px";
+            box6.style.transition = "3s";
+            box2.style.height ="0px";
+            box4.style.height ="0px";
+            c = 1;
+            a = 0;
+            b = 0;
+        }
+        else {
+            box6.style.height = "0px";
+            box6.style.transition = "3s";
+            c = 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
